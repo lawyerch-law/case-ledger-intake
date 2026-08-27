@@ -16,7 +16,7 @@
 
 ## 一键安装使用（复制给 AI 即可）
 
-> 安装技能 https://github.com/BluerAngala/case-ledger-intake 到 ~/.workbuddy/skills/case-ledger-intake，读 SKILL.md 完成首次绑定——我没有台账，请用作者模板 https://www.kdocs.cn/l/cubUxHzlKoTl 复刻到我的金山云文档。
+> 安装技能 https://github.com/BluerAngala/case-ledger-intake 到 ~/.workbuddy/skills/case-ledger-intake（已安装则跳过）；读 SKILL.md 完成首次绑定——我没有台账则用作者模板 https://www.kdocs.cn/l/cubUxHzlKoTl 复刻到我的金山云文档（已有则跳过）。
 
 ## 手动安装（3 步）
 

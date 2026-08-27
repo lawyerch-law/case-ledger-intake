@@ -16,7 +16,7 @@ This skill and the ledger template are developed by **Attorney Chen Heng (陈恒
 
 ## One-Click Install & Use (copy-paste to AI)
 
-> Install the skill from https://github.com/BluerAngala/case-ledger-intake into ~/.workbuddy/skills/case-ledger-intake, then read SKILL.md and complete first-time binding — I don't have a ledger, please duplicate the author's template from https://www.kdocs.cn/l/cubUxHzlKoTl into my Kingsoft cloud drive.
+> Install the skill from https://github.com/BluerAngala/case-ledger-intake into ~/.workbuddy/skills/case-ledger-intake (skip if already installed); then read SKILL.md and complete first-time binding — if I don't have a ledger, duplicate the author's template from https://www.kdocs.cn/l/cubUxHzlKoTl into my Kingsoft cloud drive (skip if I already have one).
 
 ## Manual Installation (3 steps)
 

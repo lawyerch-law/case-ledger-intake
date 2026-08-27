@@ -109,4 +109,4 @@ This skill and ledger are the author's personal-use templates, designed around t
 
 ## License
 
-MIT
+[MIT](LICENSE) — Copyright (c) 2026 Chen Heng (陈恒)

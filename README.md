@@ -108,4 +108,4 @@ case-ledger-intake/
 
 ## License
 
-MIT
+[MIT](LICENSE) — Copyright (c) 2026 Chen Heng (陈恒)

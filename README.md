@@ -16,7 +16,7 @@
 
 ## 一键安装使用（复制给 AI 即可）
 
-> 安装技能 https://github.com/BluerAngala/case-ledger-intake 到 ~/.workbuddy/skills/case-ledger-intake（已装则跳过）；按 SKILL.md 完成首次绑定：先检查 kdocs 连接器，未连接则引导我启用；我没有台账则用作者模板 https://www.kdocs.cn/l/cubUxHzlKoTl 复刻到我的金山云文档根目录（已有则跳过）。**绑定完成即停，等我指令，不要自行录入案件**。
+> 安装技能 https://github.com/lawyerch-law/case-ledger-intake 到 ~/.workbuddy/skills/case-ledger-intake（已装则跳过）；按 SKILL.md 完成首次绑定：先检查 kdocs 连接器，未连接则引导我启用；我没有台账则用作者模板 https://www.kdocs.cn/l/cubUxHzlKoTl 复刻到我的金山云文档根目录（已有则跳过）。**绑定完成即停，等我指令，不要自行录入案件**。
 
 ## 手动安装（3 步）
 
@@ -29,7 +29,7 @@
 **③ 安装技能**：
 
 ```bash
-git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake
+git clone https://github.com/lawyerch-law/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake
 ls ~/.workbuddy/skills/case-ledger-intake/SKILL.md   # 验证结构
 ```
 

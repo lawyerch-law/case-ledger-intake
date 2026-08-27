@@ -16,7 +16,7 @@ This skill and the ledger template are developed by **Attorney Chen Heng (陈恒
 
 ## One-Click Install & Use (copy-paste to AI)
 
-> Install the skill from https://github.com/BluerAngala/case-ledger-intake into ~/.workbuddy/skills/case-ledger-intake (skip if already installed); complete first-time binding per SKILL.md: first check the kdocs connector, guide me to enable it if not connected; if I don't have a ledger, duplicate the author's template from https://www.kdocs.cn/l/cubUxHzlKoTl into the root of my Kingsoft cloud drive (skip if I already have one). **Stop once binding is done and wait for my instructions — do not log cases on your own.**
+> Install the skill from https://github.com/lawyerch-law/case-ledger-intake into ~/.workbuddy/skills/case-ledger-intake (skip if already installed); complete first-time binding per SKILL.md: first check the kdocs connector, guide me to enable it if not connected; if I don't have a ledger, duplicate the author's template from https://www.kdocs.cn/l/cubUxHzlKoTl into the root of my Kingsoft cloud drive (skip if I already have one). **Stop once binding is done and wait for my instructions — do not log cases on your own.**
 
 ## Manual Installation (3 steps)
 
@@ -29,7 +29,7 @@ This skill and the ledger template are developed by **Attorney Chen Heng (陈恒
 **③ Install the skill**:
 
 ```bash
-git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake
+git clone https://github.com/lawyerch-law/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake
 ls ~/.workbuddy/skills/case-ledger-intake/SKILL.md   # verify structure
 ```
 

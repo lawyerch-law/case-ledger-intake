@@ -8,11 +8,11 @@
 
 本技能与台账模板由 **陈恒律师** 自用开发并公开分享，可免费复刻使用。如需更多功能（邮件通知、接入微信/飞书、自动化提醒等），可在本仓库提交 Issue 联系作者定制。
 
-## 一键提示词（复制给 AI 即可）
+## 一键安装使用（复制给 AI 即可）
 
 > 请从 https://github.com/BluerAngala/case-ledger-intake 安装"律师案件管理录入"技能：执行 `git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake`，阅读 SKILL.md。我还没有台账，请帮我复刻作者模板《律师个人案件管理台账》（来源 https://www.kdocs.cn/l/cubUxHzlKoTl，kdocs 连接器我已连接）到我的金山云文档并绑定。
 
-## 安装（3 步）
+## 手动安装（3 步）
 
 **① 连接金山文档**：在 WorkBuddy 连接器管理中启用并授权 **kdocs（金山文档）** 连接器。
 

@@ -12,7 +12,7 @@ Turn a lawyer's plain-language case description into structured fields and write
 
 ## Author & Customization
 
-This skill and the ledger template are developed by **Attorney Chen Heng (陈恒律师)** for personal use and published openly — free to duplicate. Need more features (email notifications, WeChat/Feishu integration, automated reminders, etc.)? Open an Issue in this repository to contact the author for customization.
+This skill and the ledger template are developed by **Attorney Chen Heng (陈恒律师)** (GitHub: [@lawyerCH](https://github.com/lawyerCH)) for personal use and published openly — free to duplicate. Need more features (email notifications, WeChat/Feishu integration, automated reminders, etc.)? Open an Issue in this repository to contact the author for customization.
 
 ## One-Click Install & Use (copy-paste to AI)
 

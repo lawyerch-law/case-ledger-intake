@@ -10,17 +10,7 @@
 
 ## 一键提示词（复制给 AI 即可）
 
-**场景一：录新案子（首次使用）**
-
-> 请从 https://github.com/BluerAngala/case-ledger-intake 安装"律师案件管理录入"技能：执行 `git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake`，阅读 SKILL.md。我还没有台账，请先帮我复刻作者模板《律师个人案件管理台账》（来源 https://www.kdocs.cn/l/cubUxHzlKoTl，kdocs 连接器我已连接）到我的金山云文档并绑定，然后帮我录一个新案子：〔粘贴案情描述〕
-
-**场景二：案件到了新阶段（补记）**
-
-> 用已安装的"律师案件管理录入"技能：〔案件名〕这个案子现在立案了，帮我理一下要记什么：〔粘贴进展〕
-
-**场景三：紧急应诉**
-
-> 用已安装的"律师案件管理录入"技能：我们被告了，刚收到传票，帮我登记并提示答辩期：〔粘贴案情〕
+> 请从 https://github.com/BluerAngala/case-ledger-intake 安装"律师案件管理录入"技能：执行 `git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake`，阅读 SKILL.md。我还没有台账，请帮我复刻作者模板《律师个人案件管理台账》（来源 https://www.kdocs.cn/l/cubUxHzlKoTl，kdocs 连接器我已连接）到我的金山云文档并绑定。
 
 ## 安装（3 步）
 

@@ -16,7 +16,7 @@
 
 ## 一键安装使用（复制给 AI 即可）
 
-> 请从 https://github.com/BluerAngala/case-ledger-intake 安装"律师案件管理录入"技能：执行 `git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake`，阅读 SKILL.md。我还没有台账，请帮我复刻作者模板《律师个人案件管理台账》（来源 https://www.kdocs.cn/l/cubUxHzlKoTl，kdocs 连接器我已连接）到我的金山云文档并绑定。
+> 安装技能 https://github.com/BluerAngala/case-ledger-intake 到 ~/.workbuddy/skills/case-ledger-intake，读 SKILL.md 完成首次绑定——我没有台账，请用作者模板 https://www.kdocs.cn/l/cubUxHzlKoTl 复刻到我的金山云文档。
 
 ## 手动安装（3 步）
 

@@ -16,7 +16,7 @@ This skill and the ledger template are developed by **Attorney Chen Heng (陈恒
 
 ## One-Click Install & Use (copy-paste to AI)
 
-> Install the "Lawyer Case Ledger Intake" skill from https://github.com/BluerAngala/case-ledger-intake: run `git clone https://github.com/BluerAngala/case-ledger-intake.git ~/.workbuddy/skills/case-ledger-intake`, then read SKILL.md. I don't have a ledger yet — please duplicate the author's template《律师个人案件管理台账》(source https://www.kdocs.cn/l/cubUxHzlKoTl; the kdocs connector is already connected) into my Kingsoft cloud drive and bind it.
+> Install the skill from https://github.com/BluerAngala/case-ledger-intake into ~/.workbuddy/skills/case-ledger-intake, then read SKILL.md and complete first-time binding — I don't have a ledger, please duplicate the author's template from https://www.kdocs.cn/l/cubUxHzlKoTl into my Kingsoft cloud drive.
 
 ## Manual Installation (3 steps)
 

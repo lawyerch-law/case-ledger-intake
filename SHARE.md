@@ -13,7 +13,8 @@
 
 以下真实数据已在本版本中替换为占位符，分发时**不要再改回来**：
 - file_id（master/backup）→ 已移除，只写"以 config.json 为准"
-- 台账跳转链接 → 已改为 `<LINK_URL>` 占位符
+- 台账跳转链接（个人 config.json 的 link_url）→ 已改为 `<LINK_URL>` 占位符，**私有**
+- **作者模板链接**（https://www.kdocs.cn/l/cubUxHzlKoTl）→ **公开复刻入口，保留在 SKILL.md/README 中，勿删**（新用户无台账时靠它复刻）
 - 真实姓名 → 已改为"默认代理律师（见 lawyer-profile.md）"
 - 本地法院列表 → 已改为"选项以实际 schema 为准"
 - 真实案件示例（含真实案号）→ 已改为 X 先生 / 某某区人民法院 / XXXX 号占位

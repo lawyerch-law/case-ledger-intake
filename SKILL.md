@@ -31,6 +31,7 @@ agent_created: true
 
 - 连接器：**kdocs**，写入前须 connected
 - **台账绑定**：读技能目录 `config.json`（master=唯一可写目标；backup=同名旧副本只读），缺失走「首次使用绑定」
+- **作者台账模板**（新用户无台账时复刻用）：`律师个人案件管理台账(公开展示)`，作者分享链接 https://www.kdocs.cn/l/cubUxHzlKoTl（link_id=cubUxHzlKoTl）。复刻 = 以该链接为源 `save_as_file` 复制到用户云盘生成新副本（源保留），再走绑定
 - **表/字段定位**：运行时 `get_schema`(master_file_id, show_very_hidden=true) 动态解析，建三张映射：表名→sheet_id、字段名→ID、视图名→显示字段集（**不硬编码**）
 - **期限提醒语义**（2026-08-26 定稿）：填「提醒日期」不填提前天数；自动化提醒律师侧配置
 - **回复末尾台账链接**：每次回复（采集/确认/写回/总结）末尾固定附台账链接，格式 `台账链接：<LINK_URL>`（**读 config.json 的 link_url，禁止硬编码真实链接**；未绑定或无 link_url 时省略该行，先走绑定流程），供律师点击跳转核对
@@ -42,15 +43,21 @@ agent_created: true
 ## 首次使用绑定（config.json 生成）
 
 1. 读 `config.json`：已存在 → 跳过（修改绑定需律师明确指示）；不存在 → 继续
-2. `search_files`(关键词"律师个人案件管理台账") → 名称带 `(1)` 是旧副本(backup)，其余主文件候选(master)；多候选拿不准问律师，不猜
-3. 写入 `config.json`（master / backup / bound_at），回报绑定结果；后续直接读配置
+2. 确认 kdocs 已连接（未连接 → 提示启用连接器，停止）
+3. `search_files`(关键词"律师个人案件管理台账")：
+   - **找到** → 名称带 `(1)` 是旧副本(backup)，其余主文件候选(master)；多候选拿不准问律师，不猜
+   - **找不到（新用户无台账）→ 模板复刻路径**：
+     a. 告知律师"你还没有台账，需先复刻作者模板"，说明来源为公开分享链接
+     b. 以作者模板（见「台账位置与结构」节，link_id=cubUxHzlKoTl）为源调 `save_as_file` 复制到用户云盘（dst_parent_id="0"，文件名含"律师个人案件管理台账"，on_name_conflict=rename）；或引导律师浏览器打开链接手动"另存到我的云文档"
+     c. 复刻成功后重新 `search_files` 定位 → 得新 master file_id（同名副本自动作 backup 候选）
+4. 写入 `config.json`（master / backup / bound_at；新用户复刻后通常无 link_url，省略，回复末尾不附链接），回报绑定结果；后续直接读配置
 
 ## 运行前自检（每次必做，任一失败停止不写入）
 
 | # | 检查项 | 操作 | 通过标准 | 失败处理 |
 |---|---|---|---|---|
 | 1 | 连接器 | 查状态 | kdocs connected | 提示启用连接器，停止 |
-| 2 | 台账绑定 | 读 config.json → search_files 快查 master 仍存在 | 有效可访问 | 缺失→绑定流程；已删/改名→重新绑定并回报 |
+| 2 | 台账绑定 | 读 config.json → search_files 快查 master 仍存在 | 有效可访问 | 缺失→绑定流程（含模板复刻）；已删/改名→重新绑定并回报 |
 | 3 | 动态 schema | get_schema 全量 → 三张映射 | 映射齐 + 阶段视图存在 | 解析失败→回报停止；视图名不一致→以实际为准更新映射并回报 |
 | 4 | 记录盘点 | list_records 主表 | 判定新建/补全模式 | 失败→查权限/连接，回报 |
 
